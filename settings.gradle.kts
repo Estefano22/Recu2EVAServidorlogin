@@ -1,1 +1,1 @@
-rootProject.name = "serverrest15"
+rootProject.name = "Recu2EVAServidorlogin"

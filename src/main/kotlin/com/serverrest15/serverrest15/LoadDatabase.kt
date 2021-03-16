@@ -12,10 +12,10 @@ class LoadDatabase {
     }
 
     @Bean
-    fun initDatabase(studentRepository : StudentRepository) : CommandLineRunner {
+    fun initDatabase(usersRepository : UsersRepository) : CommandLineRunner {
         return CommandLineRunner { args: Array<String?>? ->
-            logger.info("Preloading " + studentRepository.save(Student("Paquito", "Chocolatero")))
-            logger.info("Preloading " + studentRepository.save(Student("Paqita", "Salas")))
+            logger.info(" El User" + usersRepository.save(Users("Juan", "Abc.,")))
+
         }
 
     }
